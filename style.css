@@ -1,8 +1,10 @@
-* {
+*, body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Inter;
 }
+
 .container {
   width: 100%;
   min-height: 100vh;
@@ -11,220 +13,333 @@
   justify-content: center;
   align-items: center;
 }
+
 .card {
   background-color: #ffffff;
-  width: 100%;
-  max-width: 430px;
-  min-height: 603px;
-  padding: 0 42px;
+  width: 462px;
+  padding: 39px 59px;
 }
+
 /* -------this code write for heading and line drow both side----- */
-.headings h1 {
-  margin-top: 39px;
+
+h1.heading span {
+  background:#fff; 
+  padding:0 6px; 
+}
+
+h1.heading {
   color: #ff6b82;
   text-align: center;
-  font-size: 30px;
   position: relative;
   font-size: 20px;
   font-weight: 600;
-  line-height: 24.2px;
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 0.9px solid #C8C8C8; 
+  line-height: 0.1em;
+  margin-bottom: 28px;
 }
 
-h1:before {
-  content: "";
-  display: block;
-  min-width: 91.65px;
-  height: 0;
-  border: 0.9px solid #c8c8c8;
-  left: 0;
-  top: 10px;
-  position: absolute;
+/* radio input style */
+.radio {
+  width: 14.46px;
+  height: 14.46px;
+  border-radius: 50%;
+  border: 0.9px solid #ff6b82;
+  position: relative;
+  display: inline-block;
 }
 
-h1:after {
-  content: "";
-  display: block;
-  min-width: 91.65px;
-  height: 0;
-  border: 0.9px solid #c8c8c8;
-  right: 0;
-  top: 10px;
+.radio .circle {
   position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 9.04px;
+  height: 9.04px;
+  border-radius: 50%;
+  display: none;
+  background-color: #ff6b82;
 }
+
 /* -----  draw the 3 boxes code is write here------  */
 .box {
-  padding: 20px 15px;
-  max-width: 341px;
-  min-height: 74.11px;
+  padding: 20px 22px;
+  width: 100%;
   border: 0.9px solid #c8c8c8;
   margin: 20px auto;
   cursor: pointer;
+  height: 74.11px;
+  position: relative;
 }
-.box p {
-  margin-left: 30px;
-  margin-top: -10px;
+
+.active_box {
+  height: fit-content !important;
+  border: 2px solid #ff6b82;
+}
+
+.active_box .option_section {
+  display: flex !important;
+}
+
+.active_box .radio .circle {
+  display: block !important;
+}
+
+/* Box 1  styles */
+
+#box1 .box_inner {
+  display: flex;
+  align-items: center;
+}
+
+#box1 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#box1 .unit_row {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#box1 .unit_discount {
+  display: flex;
+  align-items: center;
+}
+
+#box1 .unit_discount h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.94px;
+}
+
+#box1 .unit_discount span {
+  padding: 2px 8px;
+  background-color: #ff6b82;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  margin-left: 10px;
+}
+
+#box1 .unit_row p {
   font-size: 12px;
   font-weight: 400;
   line-height: 14.52px;
   color: #000000;
 }
 
-/* --------code is write here for circle1,circle2,circle3------ */
-
-.radio {
-  position: relative;
+#box1 .price_row h3{
+  font-size: 14.46px;
+  font-weight: 500;
+  line-height: 17.5px;
+  color: #000000;
 }
-.radio .circle1 {
-  width: 14.46px;
-  height: 14.46px;
-  border-radius: 50%;
 
-  margin-top: 10px;
-  border: 0.9px solid #ff6b82;
-  position: absolute;
+#box1 .price_row .price {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  text-decoration: line-through;
+  opacity: 30%;  
 }
-.radio .circle1:after {
+
+/* Box 2 styles */
+
+#box2 .box_inner {
+  display: flex;
+  align-items: center;
+}
+
+#box2 .most_popular {
   position: absolute;
-  content: " ";
-  left: 1.5px;
-  top: 1px;
-  width: 9.04px;
-  height: 9.04px;
-  text-align: center;
   background-color: #ff6b82;
-  border-radius: 50%;
+  top: -9px;
+  right: 4px;
+  padding: 5.5px 11px;
+  border-radius: 0 0 4px 4px;
 }
-.circle2 {
-  width: 14.46px;
-  height: 14.46px;
-  border-radius: 50%;
-  position: absolute;
-  top: 10px;
-  border: 0.9px solid #dadada;
+
+#box2 .most_popular p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: center;
 }
-.circle3 {
-  width: 14.46px;
-  height: 14.46px;
-  border-radius: 50%;
-  position: absolute;
-  top: 10px;
-  border: 0.9px solid #dadada;
-}
-.row {
+
+#box2 .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
-.unit_discount_1 {
+#box2 .unit_row {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+
+#box2 .unit_discount {
   display: flex;
   align-items: center;
-  margin-left: 30px;
-  margin-top: -12px;
-  gap: 10px;
 }
-.unit_discount_1 h2 {
+
+#box2 .unit_discount h2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 16.94px;
 }
-.unit_discount_1 span {
+
+#box2 .unit_discount span {
   padding: 2px 8px;
   background-color: #ff6b82;
   color: #ffffff;
   font-size: 12px;
   font-weight: 400;
   line-height: 14.52px;
-}
-.unit_discount_2 {
-  display: flex;
-  align-items: center;
-  margin-left: 30px;
-  gap: 10px;
-}
-.unit_discount_2 h2 {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16.94px;
-}
-.unit_discount_2 span {
-  padding: 2px 8px;
-  background-color: #ff6b82;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 14.52px;
-}
-.unit_discount_3 {
-  display: flex;
-  align-items: center;
-  margin-left: 30px;
-
-  gap: 10px;
-}
-.unit_discount_3 h2 {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16.94px;
-}
-.unit_discount_3 span {
-  padding: 2px 8px;
-  background-color: #ff6b82;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 14.52px;
-  margin-top: -15px;
+  margin-left: 10px;
 }
 
-.price {
+#box2 .price_row h3{
+  font-size: 14.46px;
+  font-weight: 500;
+  line-height: 17.5px;
+  color: #000000;
+  margin-top: 2px;
+}
+
+#box2 .price_row .price {
   font-size: 10px;
-  font-weight: 400px;
-  line-height: 12.1px;
+  font-weight: 400;
+  line-height: 12px;
   text-decoration: line-through;
-  opacity: 30%;
+  opacity: 30%;  
 }
 
-.options {
-  max-width: 341px;
+/* Box 3 styles */
+
+#box3 .box_inner {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+
+#box3 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#box3 .unit_row {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#box3 .unit_discount {
+  display: flex;
+  align-items: center;
+}
+
+#box3 .unit_discount h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.94px;
+}
+
+#box3 .unit_discount span {
+  padding: 2px 8px;
+  background-color: #ff6b82;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+#box3 .price_row {
+  margin-bottom: 20px;
+}
+
+#box3 .price_row h3{
+  font-size: 14.46px;
+  font-weight: 500;
+  line-height: 17.5px;
+  color: #000000;
+  margin-top: 2px;
+}
+
+#box3 .price_row .price {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  text-decoration: line-through;
+  opacity: 30%;  
+}
+
+/* options styles */
+.option_section {
   display: none;
-
-  margin-left: 30px;
-  margin-bottom: 5px;
+  margin-left: 25px;
 }
 
-.color-size {
+.size_section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 21px;
+  margin-top: 14px;
 }
-.color-size p {
+
+.color_section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 14px;
+  margin-left: 10px;
+}
+
+.size_section p {
+  margin-left: 20px;
+}
+
+.color_section p, .size_section p {
   font-size: 9.94px;
   font-weight: 400;
   color: #000000;
 }
+
 .size {
   width: 100%;
   display: flex;
   gap: 10px;
   margin-top: 10px;
 }
+
 label {
   margin-top: 10px;
+  font-size: 9.04px;
+  font-weight: 400;
+  color: #000000;
 }
+
 select {
   width: 65.98px;
   height: 25.31px;
 }
-select {
-  width: 72.3px;
-  height: 28.31px;
-}
+
 .color {
   margin-top: 10px;
   display: flex;
-  margin-left: 30px;
 }
 
 .summery {
@@ -232,13 +347,15 @@ select {
   display: flex;
   justify-content: space-between;
 }
+
 .summery h3 {
   color: #ff6b82;
   font-size: 14px;
   font-weight: 500;
 }
+
 .summery span {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   color: #000000;
 }
@@ -249,7 +366,6 @@ button {
   justify-content: center;
   gap: 10px;
   width: 100%;
-  max-width: 342px;
   height: 40px;
   margin-top: 20px;
   background-color: #ff6b82;
@@ -262,25 +378,4 @@ button {
 .plus {
   font-size: 25px;
   font-weight: 300;
-}
-
-.box-text {
-  position: relative;
-  display: flex;
-}
-.box-text h4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: -13px;
-  top: -25px;
-  max-width: 120px;
-  height: 20px;
-  background-color: #ff6b82;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 700;
-  border-radius: 4px;
-  line-height: 14px;
 }
