@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 430px;
+  min-height: 603px;
+  padding: 0 42px;
+}
+/* -------this code write for heading and line drow both side----- */
+.headings h1 {
+  margin-top: 39px;
+  color: #ff6b82;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.2px;
+}
+
+h1:before {
+  content: "";
+  display: block;
+  min-width: 91.65px;
+  height: 0;
+  border: 0.9px solid #c8c8c8;
+  left: 0;
+  top: 10px;
+  position: absolute;
+}
+
+h1:after {
+  content: "";
+  display: block;
+  min-width: 91.65px;
+  height: 0;
+  border: 0.9px solid #c8c8c8;
+  right: 0;
+  top: 10px;
+  position: absolute;
+}
+/* -----  draw the 3 boxes code is write here------  */
+.box {
+  padding: 20px 15px;
+  max-width: 341px;
+  min-height: 74.11px;
+  border: 0.9px solid #c8c8c8;
+  margin: 20px auto;
+  cursor: pointer;
+}
+.box p {
+  margin-left: 30px;
+  margin-top: -10px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  color: #000000;
+}
+
+/* --------code is write here for circle1,circle2,circle3------ */
+
+.radio {
+  position: relative;
+}
+.radio .circle1 {
+  width: 14.46px;
+  height: 14.46px;
+  border-radius: 50%;
+
+  margin-top: 10px;
+  border: 0.9px solid #ff6b82;
+  position: absolute;
+}
+.radio .circle1:after {
+  position: absolute;
+  content: " ";
+  left: 1.5px;
+  top: 1px;
+  width: 9.04px;
+  height: 9.04px;
+  text-align: center;
+  background-color: #ff6b82;
+  border-radius: 50%;
+}
+.circle2 {
+  width: 14.46px;
+  height: 14.46px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  border: 0.9px solid #dadada;
+}
+.circle3 {
+  width: 14.46px;
+  height: 14.46px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  border: 0.9px solid #dadada;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.unit_discount_1 {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: -12px;
+  gap: 10px;
+}
+.unit_discount_1 h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.94px;
+}
+.unit_discount_1 span {
+  padding: 2px 8px;
+  background-color: #ff6b82;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+}
+.unit_discount_2 {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  gap: 10px;
+}
+.unit_discount_2 h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.94px;
+}
+.unit_discount_2 span {
+  padding: 2px 8px;
+  background-color: #ff6b82;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+}
+.unit_discount_3 {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+
+  gap: 10px;
+}
+.unit_discount_3 h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.94px;
+}
+.unit_discount_3 span {
+  padding: 2px 8px;
+  background-color: #ff6b82;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  margin-top: -15px;
+}
+
+.price {
+  font-size: 10px;
+  font-weight: 400px;
+  line-height: 12.1px;
+  text-decoration: line-through;
+  opacity: 30%;
+}
+
+.options {
+  max-width: 341px;
+  display: none;
+
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+
+.color-size {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 21px;
+}
+.color-size p {
+  font-size: 9.94px;
+  font-weight: 400;
+  color: #000000;
+}
+.size {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+label {
+  margin-top: 10px;
+}
+select {
+  width: 65.98px;
+  height: 25.31px;
+}
+select {
+  width: 72.3px;
+  height: 28.31px;
+}
+.color {
+  margin-top: 10px;
+  display: flex;
+  margin-left: 30px;
+}
+
+.summery {
+  max-width: 341px;
+  display: flex;
+  justify-content: space-between;
+}
+.summery h3 {
+  color: #ff6b82;
+  font-size: 14px;
+  font-weight: 500;
+}
+.summery span {
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 342px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #ff6b82;
+  border: 0;
+  outline: 0;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+}
+.plus {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.box-text {
+  position: relative;
+  display: flex;
+}
+.box-text h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -13px;
+  top: -25px;
+  max-width: 120px;
+  height: 20px;
+  background-color: #ff6b82;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+  line-height: 14px;
+}
